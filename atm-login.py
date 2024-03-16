@@ -8,7 +8,7 @@ def main():
     user=b.get()
     passwor=c.get()
     #mysql connection 
-    conn=pymysql.connect(host='localhost',user='root',password='Ankita@18',db='deepanshu')
+    conn=pymysql.connect(host='localhost',user='root',password='*******',db='deepanshu')
     a=conn.cursor()
     a.execute("select * from login where username='"+user+"'and Password='"+passwor+"'")
     result=a.fetchall()
